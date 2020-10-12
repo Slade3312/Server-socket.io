@@ -1,4 +1,7 @@
 const arr = []
+setInterval(()=>{
+  arr=[]
+},3600000)
 const app = require('express')()
 const server = require("http").createServer(app);
 const io = require("socket.io")(server);
